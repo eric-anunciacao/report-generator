@@ -32,7 +32,7 @@ public class ReportController {
 	}
 
 	@GetMapping("/pdf/{id}")
-	public ResponseEntity<InputStreamResource> gerarRelatorio2(@PathVariable String id) {
+	public ResponseEntity<InputStreamResource> gerarRelatorioNaTela(@PathVariable String id) {
 		try {
 			log.info("Gerando relatório " + id);
 			var headers = new HttpHeaders();
