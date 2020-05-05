@@ -46,4 +46,9 @@ public class ReportController {
 		}
 	}
 
+	@GetMapping
+	public ResponseEntity<String> init() {
+		return ResponseEntity.ok().body("Chamada realizada com sucesso!");
+	}
+
 }
