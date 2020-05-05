@@ -16,7 +16,7 @@
 	<description>API de geração de relatório</description>
 
 	<properties>
-		<java.version>13</java.version>
+		<java.version>11</java.version>
 	</properties>
 
 	<dependencies>
@@ -65,12 +65,8 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>13</source>
-					<target>13</target>
-				</configuration>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
